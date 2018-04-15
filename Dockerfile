@@ -5,3 +5,5 @@ RUN apt-get -q -y update \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
  optipng jpegoptim parallel
 
+COPY optimize.sh /usr/local/bin/optimize.sh
+
